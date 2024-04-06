@@ -164,14 +164,14 @@ class ProductCard extends StatelessWidget {
     return Card(
       margin: EdgeInsets.all(8.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(10.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
               product.imageUrl,
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 8.0),
@@ -250,6 +250,7 @@ class _CartPageState extends State<CartPage> {
                   icon: Icon(Icons.delete),
                   onPressed: () => _removeItem(product),
                 ),
+                SizedBox(height: 20),
               ],
             ),
           );
